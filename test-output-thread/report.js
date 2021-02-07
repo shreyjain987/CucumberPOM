@@ -1,58 +1,58 @@
 $(document).ready(function() {
 CucumberHTML.timelineItems.pushArray([
   {
-    "id": "d2fd8603-9d8a-4883-8de8-de7e7a3339fe",
+    "id": "999db4a8-8ab3-45a9-a8dd-ff41f75bafde",
     "feature": "Account Page Feature",
     "scenario": "Accounts page title",
-    "start": 1612169529193,
+    "start": 1612442506472,
     "group": 1,
     "content": "",
     "tags": "@accounts,",
-    "end": 1612169544760,
+    "end": 1612442516636,
     "className": "passed"
   },
   {
-    "id": "d900d4e8-8054-4a60-849a-c0ba316987d1",
+    "id": "fe8e5f41-b03b-444d-babf-3691bae96931",
+    "feature": "Login page feature",
+    "scenario": "Login with correct credentials",
+    "start": 1612442544905,
+    "group": 1,
+    "content": "",
+    "tags": "@login,",
+    "end": 1612442556286,
+    "className": "passed"
+  },
+  {
+    "id": "2818043b-4b8e-48c5-ba19-d1160ec539d9",
     "feature": "Login page feature",
     "scenario": "Login page title",
-    "start": 1612169558268,
+    "start": 1612442527085,
     "group": 1,
     "content": "",
     "tags": "@login,",
-    "end": 1612169567636,
+    "end": 1612442535002,
     "className": "passed"
   },
   {
-    "id": "d2048286-1505-49c7-a7f2-7e612e281bc1",
-    "feature": "Account Page Feature",
-    "scenario": "Accounts section count",
-    "start": 1612169544776,
-    "group": 1,
-    "content": "",
-    "tags": "@accounts,",
-    "end": 1612169558259,
-    "className": "passed"
-  },
-  {
-    "id": "1824de4c-20f5-43d7-b5cc-d277279a9ea6",
+    "id": "54d4a662-e6a2-4e23-9740-b87f454215ab",
     "feature": "Login page feature",
     "scenario": "Forgot Password link",
-    "start": 1612169567657,
+    "start": 1612442535012,
     "group": 1,
     "content": "",
     "tags": "@login,",
-    "end": 1612169576472,
+    "end": 1612442544894,
     "className": "failed"
   },
   {
-    "id": "9fcaf046-70b7-4061-834d-37c8e0910782",
-    "feature": "Login page feature",
-    "scenario": "Login with correct credentials",
-    "start": 1612169576493,
+    "id": "8662db2e-0da5-4c69-a9b7-8f5879d3a93a",
+    "feature": "Account Page Feature",
+    "scenario": "Accounts section count",
+    "start": 1612442516657,
     "group": 1,
     "content": "",
-    "tags": "@login,",
-    "end": 1612169588608,
+    "tags": "@accounts,",
+    "end": 1612442527080,
     "className": "passed"
   }
 ]);

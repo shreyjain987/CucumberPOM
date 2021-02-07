@@ -27,15 +27,31 @@ public class ApplicationHooks {
 	}
 
 	@Before(order = 1)
-	public void launchBrowser() {
+	public void launchBrowser(Scenario scenario) {
+		System.out.println("*********************");
+		System.out.println("Release: " + prop.getProperty("release"));
+		System.out.println("Browser: " + prop.getProperty("browser"));
+		System.out.println("Environment: " + prop.getProperty("environment"));
+		System.out.println("User: " + prop.getProperty("userName"));
+		System.out.println("Scenario: " + scenario.getName());
+		System.out.println("*********************");
 		String browserName = prop.getProperty("browser");
 		driverFactory = new DriverFactory();
 		driver = driverFactory.init_driver(browserName);
 	}
 
 	@After(order = 0)
-	public void quitBrowser() {
+	public void quitBrowser(Scenario scenario) {
+		driver.close();
+		System.out.println("Browser is Closed");
+
+		// Quit browser
 		driver.quit();
+		System.out.println("Quit browser");
+		System.out.println("***************************************" + "\n" + "Execution Status: "
+				+ scenario.getStatus() + "\n" + "***************************************");
+		
+		System.out.println("----------------- End of Scenario: " + scenario.getName() + " -----------------");
 	}
 
 	@After(order = 1)
